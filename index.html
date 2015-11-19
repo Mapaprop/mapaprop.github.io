@@ -1,1 +1,382 @@
-Hello World
+
+<!-- ITEMSCOPE Update your html tag to include the itemscope and itemtype attributes -->
+<html itemscope itemtype="http://schema.org/Product" lang="es">
+<head>
+<!-- ITEMSCOPE - Add the following three tags inside head -->
+<meta itemprop="name" content="Mapaprop">
+<meta itemprop="description" content="Software de Gestión Inmobiliaria Gratis y por internet">
+<meta itemprop="image" content="http://mapaprop.com/img/favicon.png">
+
+
+<link rel="shortcut icon" href="http://www.mapaprop.com/img/favicon.png" />
+<meta charset="utf-8">
+
+<!--2014-2-22 chromium utility google-->
+<meta name="application-url" content="https://www.mapapropapp.com/">
+<meta name="dcterms.rightsHolder" content="Todos los derechos reservados - Mapaprop.com">
+<meta name="dcterms.dateCopyrighted" content="2015">
+
+
+<meta name="copyright" content="Mapaprop">
+<meta name="author" content="mapaprop.com">
+<meta property="og:image" content="http://www.mapaprop.com/img/mapaprop-200x200.png" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!--last bootstrap 2015-6-24-->
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+<link href="http://www.mapaprop.com/scripts/bootstrap/css/bootstrap-mapaprop-v3.css" rel="stylesheet">
+<!--angular js 2015-02-21-->
+<script type="text/javascript" src="http://www.mapaprop.com/scripts/angular/angular.min.js"></script>
+<script type="text/javascript" src="http://www.mapaprop.com/scripts/script.js"></script>
+
+<title>Mapaprop Developers Center</title>
+
+
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top">
+
+		<div class="container-fluid">
+
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed top20" data-toggle="collapse" data-target="#mapaprop-menu">
+					<span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/">
+					<img alt="Brand" src="http://www.mapaprop.com/img/logo.png">
+				</a>
+				<button class="btn btn-default navbar-btn pull-right right10 visible-xs top20" onclick="location.href='https://www.mapapropapp.com/'" type="button">Ingresar</button>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="mapaprop-menu">
+				<ul class="nav navbar-nav">
+					<!--visible-menu-->
+					<li class="dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+							<i class="fa fa-bars fa-2x "></i>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="/publicacion">Publicación</a>
+							</li>
+							<li>
+								<a href="/funciones">Gestión Inmobiliaria</a>
+							</li>
+							<li>
+								<a href="/websites">Sitio Web</a>
+							</li>
+							<li>
+								<a href="/red">Red</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="/funciones/">Funciones</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="/planes/">Planes</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="left10" href="http://www.twitter.com/mapaprop" target="_blank" title="Seguir nuestras publicaciones desde Twitter">
+							<i class="fa fa-twitter fa-2x"></i>
+						</a>
+					</li>
+
+					<li class="dropdown hidden-xs">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+							&nbsp;<i class="fa fa-plus fa-2x"></i>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li>
+								<a href="http://www.mapaprop.com/blog/">Blog</a>
+							</li>
+							<li>
+								<a href="http://www.mapaprop.com/contacto/">Contacto</a>
+							</li>
+							<li>
+								<a href="http://www.mapaprop.com/soporte/">Soporte</a>
+							</li>
+							<li>
+								<a href="https://mapaprop.atlassian.net/wiki/display/HELP/Ayuda/" target="_blank">Ayuda</a>
+							</li>
+							<li>
+								<a href="http://www.mapaprop.com/websites/desarrolladores">Desarrolladores</a>
+							</li>
+							<li>
+								<a href="http://www.mapaprop.com/websites/temporarios">Alquileres Temporarios</a>
+							</li>
+							<li>
+								<a href="http://www.mapaprop.com/faqs/">FAQ´s</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="">Ingreso Partners</a>
+							</li>
+						</ul>
+					</li>
+					<!--/.visible-menu-->
+
+					<li class="top10 left10 visible-xs left10 right10">
+						<button class="btn btn-default btn-block navbar-btn btn-success " onclick="location.href='https://www.mapapropapp.com/suscripcion/'" type="button">Crear Cuenta</button>
+					</li>
+
+					<li class="top10 left10 right10 visible-xs">
+						<!-- Single button -->
+						<div class="btn-group btn-block">
+							<button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								Productos <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="http://www.mapaprop.com/publicacion">API OAuth</a>
+								</li>
+								<li>
+									<a href="http://www.mapaprop.com/funciones">Gestión Inmobiliaria</a>
+								</li>
+								<li>
+									<a href="http://www.mapaprop.com/websites">Sitio Web</a>
+								</li>
+								<li>
+									<a href="http://www.mapaprop.com/red">Red</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="http://www.mapaprop.com/funciones/">Funciones</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="http://www.mapaprop.com/planes/">Planes</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<div class="clearfix visible-xs"></div>
+					<li class="top10 left10 right10 visible-xs">
+						<!-- Single button -->
+						<div class="btn-group btn-block">
+							<button type="button" class="btn btn-default btn-block dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+								Más... <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" role="menu">
+								<li>
+									<a href="http://www.mapaprop.com/blog/">Blog</a>
+								</li>
+								<li>
+									<a href="http://www.mapaprop.com/contacto/">Contacto</a>
+								</li>
+								<li>
+									<a href="https://mapaprop.atlassian.net/wiki/display/HELP/Ayuda/" target="_blank">Ayuda</a>
+								</li>
+								<li>
+									<a href="http://www.mapaprop.com/websites/desarrolladores">Desarrolladores</a>
+								</li>
+								<li>
+									<a href="http://www.mapaprop.com/websites/temporarios">Alquileres Temporarios</a>
+								</li>
+								<li>
+									<a href="http://www.mapaprop.com/faqs/">FAQ´s</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a href="">Ingreso Partners</a>
+								</li>
+							</ul>
+						</div>
+					</li>
+
+
+
+
+				</ul>
+
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+
+
+	<div class="clearfix"></div>
+	<!--HEADER HOME-->
+
+	<!--jumbotron-->
+	<div class="jumbotron header-home-white">
+
+		<h1 class="text-center openlight top0">Mapaprop</h1>
+		<h2 class="openlight bottom10 top20 text-center">Gestión Inmobiliaria en la nube: una base de datos para todas las funciones</h2>
+
+		<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8 openlight top30 bottom30">
+			<a class="btn btn-info btn-register" href="https://www.mapapropapp.com/suscripcion/">
+				<i class="icon-pencil"></i> Regístrese, es gratis
+			</a>
+		</div>
+		<div class="clearfix"></div>
+
+		<img class="hero box-shadow-img" src="http://www.mapaprop.com/img/home-illustration-gestion.jpg" />
+		<div class="clearfix"></div>
+
+	</div>
+	<!--/.end jumbotron-->
+
+	<!--/.HEADER HOME-->
+
+
+
+	<div class="header-home-gray1">
+
+		<h1 class="text-center top20 openlight">Publicación Gratis</h1>
+		<h2 class="openlight bottom30 top20 text-center">Publique propiedades sin límite de cantidad ni de imágenes</h2>
+
+		<div class="clearfix"></div>
+		<img class="hero" src="http://www.mapaprop.com/img/portales-3-lines.png" />
+		<div class="clearfix"></div>
+
+		<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8 openlight top30 bottom30">
+			<a class="btn btn-info btn-register" href="https://www.mapapropapp.com/suscripcion/">
+				<i class="icon-pencil"></i> Regístrese, es gratis
+			</a>
+		</div>
+		<div class="clearfix"></div>
+		<p class="lead text-center">
+			<a class="link-graydark" href="http://www.mapaprop.com/publicacion">Leer más...</a>
+		</p>
+
+	</div>
+	<div class="header-home-gray2">
+		<h1 class="text-center top20 openlight">Más y mejores funciones</h1>
+		<h2 class="openlight bottom30 top20 text-center fore-white">El soporte a largo plazo es nuestro primer objetivo.</h2>
+
+
+
+		<div class="home-pill col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<span class="fa-stack fa-5x pull-left right10"> <i class="fa fa-square fa-stack-2x"></i> <i class="fa fa-bullhorn fa-stack-1x fa-inverse"></i>
+			</span>
+			<p class="lead fore-white top20">Publicación gratis y sin límites</p>
+		</div>
+
+		<div class="home-pill col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<span class="fa-stack fa-5x pull-left right10"> <i class="fa fa-square fa-stack-2x"></i> <i class="fa fa-suitcase fa-stack-1x fa-inverse"></i>
+			</span>
+			<p class="lead fore-white top20">Gestión de inmuebles y clientes</p>
+		</div>
+
+		<div class="home-pill col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<span class="fa-stack fa-5x pull-left right10"> <i class="fa fa-cloud fa-stack-2x"></i> <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+			</span>
+			<p class="lead fore-white top20">Redes y conexiónes avanzadas</p>
+		</div>
+
+		<div class="home-pill col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<span class="fa-stack fa-5x pull-left right10"> <i class="fa fa-square fa-stack-2x"></i> <i class="fa fa-gears fa-stack-1x fa-inverse"></i>
+			</span>
+			<p class="lead fore-white top20">Usuarios, sucursales y reportes</p>
+		</div>
+
+
+
+		<div class="home-pill col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<span class="fa-stack fa-5x pull-left right10"> <i class="fa fa-square fa-stack-2x"></i> <i class="fa fa-support fa-stack-1x fa-inverse"></i>
+			</span>
+			<p class="lead fore-white top20">Manuales y Soporte técnico eficiente</p>
+		</div>
+
+
+		<div class="home-pill col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<span class="fa-stack fa-5x pull-left right10"> <i class="fa fa-square fa-stack-2x"></i> <i class="fa fa-globe fa-stack-1x fa-inverse"></i>
+			</span>
+			<p class="lead fore-white top20">Sitio Web conectado (opcional)</p>
+		</div>
+
+		<div class="home-pill col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<span class="fa-stack fa-5x pull-left right10"> <i class="fa fa-square fa-stack-2x"></i> <i class="fa fa-mortar-board fa-stack-1x fa-inverse"></i>
+			</span>
+			<p class="lead fore-white top20">Solo para profesionales verificados</p>
+		</div>
+
+		<div class="home-pill col-lg-3 col-md-3 col-sm-6 col-xs-12">
+			<span class="fa-stack fa-5x pull-left right10"> <i class="fa fa-square fa-stack-2x"></i> <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+			</span>
+			<p class="lead fore-white top20">API's y herramientas para desarrolladores</p>
+		</div>
+
+
+		<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8 openlight top30 bottom30">
+			<a class="btn btn-success btn-register" href="https://www.mapapropapp.com/suscripcion/">
+				<i class="icon-pencil"></i> Regístrese, es gratis
+			</a>
+		</div>
+		<div class="clearfix"></div>
+		<p class="lead text-center">
+			<a class="link-white" href="/funciones/">Leer más...</a>
+		</p>
+
+	</div>
+	<div class="header-home-gray1">
+		<h1 class="text-center top20 openlight">Red Inmobiliaria</h1>
+		<h2 class="openlight bottom30 top20 text-center">
+			Amplíe sus opciones de negocios colaborando con otros profesionales. <br> <span class="fa-stack fa-5x text-center"> <i class="fa fa-cloud fa-stack-2x"></i> <i class="fa fa-home fa-stack-1x fa-inverse"></i>
+			</span>
+		</h2>
+		<p class="lead text-center">Busque propiedades de la Red Mapaprop y mantenga conversaciones con otros usuarios del sistema</p>
+
+
+		<div class="clearfix"></div>
+
+		<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8 openlight bottom30">
+			<a class="btn btn-warning btn-register" href="/red/">
+				<i class="icon-pencil"></i> Contratacion opcional
+			</a>
+		</div>
+		<div class="clearfix"></div>
+		<p class="lead text-center">
+			<a class="link-graydark" href="/red/">Leer más...</a>
+		</p>
+	</div>
+	<div class="header-home-gray3">
+
+		<h1 class="text-center top20 openlight">Sitio Web Adaptativo</h1>
+		<h2 class="openlight bottom30 top20 text-center fore-white">El único sitio web de diseño con funciones de autogestión</h2>
+
+		<div class="clearfix"></div>
+		<img class="hero box-shadow-img" src="http://www.mapaprop.com/img/home-illustration-website.jpg" />
+		<div class="clearfix"></div>
+
+		<div class="col-md-offset-4 col-md-4 col-sm-offset-3 col-sm-6 col-xs-offset-2 col-xs-8 openlight top30 bottom30">
+			<a class="btn btn-warning btn-register" href="/websites/">
+				<i class="icon-pencil"></i> Contratación opcional
+			</a>
+		</div>
+		<div class="clearfix"></div>
+		<p class="lead text-center">
+			<a class="link-white" href="http://www.mapaprop.com/websites/">Leer más...</a>
+		</p>
+
+
+	</div>
+
+	<!-- Scripts Footer -->
+	<!-- Bootstrap  & jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!--last bootstrap 2014-2-25-->
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+
+
+
+	<!—[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]—>
+
+
+
+	<div class="clear"></div>
+</body>
+</html>
