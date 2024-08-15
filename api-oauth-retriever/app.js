@@ -12,7 +12,7 @@ angular.module('api-oauth-retriever').controller('PageController', ['$scope', '$
 		$scope.token = '';
 		$scope.error = '';
     var params = 'client_id=' + $scope.clientId + '&client_secret=' + $scope.clientSecret + '&grant_type=client_credentials';
-    $http.post('https://www.mapapropapp.com/api/action/oauth2-v1/authorize', params, {
+    $http.post('https://mapaprop.app/api/action/oauth2-v1/authorize', params, {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
       }
