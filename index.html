@@ -1,92 +1,227 @@
-
-<!-- ITEMSCOPE Update your html tag to include the itemscope and itemtype attributes -->
+<!DOCTYPE html>
 <html itemscope itemtype="https://schema.org/Product" lang="es">
 <head>
-<!-- ITEMSCOPE - Add the following three tags inside head -->
-<meta itemprop="name" content="Mapaprop">
-<meta itemprop="description" content="Software de Gestión Inmobiliaria Gratis y por internet">
-<meta itemprop="image" content="https://mapaprop.com/img/favicon.png">
+  <!-- SEO & Meta Tags -->
+  <meta itemprop="name" content="Mapaprop">
+  <meta itemprop="description" content="Software de Gestión Inmobiliaria Gratis y por internet">
+  <meta itemprop="image" content="https://mapaprop.com/img/favicon.png">
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="application-url" content="https://mapaprop.app/">
+  <meta name="dcterms.rightsHolder" content="Todos los derechos reservados - Mapaprop.com">
+  <meta name="dcterms.dateCopyrighted" content="2015">
+  <meta name="copyright" content="Mapaprop">
+  <meta name="author" content="mapaprop.com">
 
-<link rel="shortcut icon" href="https://mapaprop.com/img/favicon.svg" />
-<meta charset="utf-8">
+  <!-- Open Graph -->
+  <meta property="og:image" content="https://mapaprop.com/img/favicon.svg" />
+  <meta property="og:title" content="Mapaprop Developers Center" />
+  <meta property="og:description" content="Real Estate Software - Developer Resources" />
 
-<!--2014-2-22 chromium utility google-->
-<meta name="application-url" content="https://mapaprop.app/">
-<meta name="dcterms.rightsHolder" content="Todos los derechos reservados - Mapaprop.com">
-<meta name="dcterms.dateCopyrighted" content="2015">
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="https://mapaprop.com/img/favicon.svg" />
 
+  <!-- Title -->
+  <title>Mapaprop Developers Center</title>
 
-<meta name="copyright" content="Mapaprop">
-<meta name="author" content="mapaprop.com">
-<meta property="og:image" content="https://mapaprop.com/img/favicon.svg" />
+  <!-- Google Fonts - Raleway -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 5.3.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-<!--last bootstrap 2021-10-07-->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-<!--angular js 2015-02-21-->
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.2/angular.min.js"></script>
-
-<title>Mapaprop Developers Center</title>
-
-
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img alt="Mapaprop" src="https://www.mapaprop.com/img/logo.png">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="https://mapaprop.com" target="_blank">Sitio Web</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="api-oauth-retriever">API Tools</a>
+          </li>
+          <li class="nav-item ms-3">
+            <a class="btn btn-secondary" href="https://mapaprop.app/" target="_blank">Ingresar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-		<div class="container-fluid">
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-12">
 
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<a class="navbar-brand" href="/">
-					<img alt="Brand" src="https://www.mapaprop.com/img/logo.png">
-				</a>
-				<button class="btn btn-default pull-right right10 top20" onclick="location.href='https://mapaprop.app/'" type="button">Ingresar</button>
-			</div>
+          <!-- Logo -->
+          <div class="logo-main">
+            <img src="https://www.mapaprop.com/img/mapaprop-icon.svg"
+                 alt="Mapaprop"
+                 width="200"
+                 class="d-block mx-auto mb-4" />
+          </div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
+          <!-- Title -->
+          <h1 class="display-1">Mapaprop Developers</h1>
+          <h2 class="display-5">Real Estate Software</h2>
 
+          <!-- CTA Button -->
+          <div class="my-5">
+            <a href="api-oauth-retriever" class="btn btn-secondary btn-lg">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-key-fill me-2" viewBox="0 0 16 16" style="vertical-align: text-bottom;">
+                <path d="M3.5 11.5a3.5 3.5 0 1 1 3.163-5H14L15.5 8 14 9.5l-1-1-1 1-1-1-1 1zm-1.5-8a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
+              </svg>
+              API Access Token Generator
+            </a>
+          </div>
 
+          <!-- Hero Image -->
+          <div class="mt-5">
+            <img class="hero box-shadow-img img-fluid"
+                 src="https://www.mapaprop.com/img/illustrations/mapaprop-console.png"
+                 alt="Mapaprop Console" />
+          </div>
 
-	<div class="clearfix"></div>
-	<div class="col-md-8 mx-auto text-center mt-0">
-    <img src="https://www.mapaprop.com/img/mapaprop-icon.svg" alt="Mapaprop" width="250" class="d-block mx-auto" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <h1 class="text-center display-1">Mapaprop Developers</h1>
-    <h2 class="text-center display-5">
-      Real Estate Software
+  <!-- Features Section -->
+  <section class="features-section">
+    <div class="container">
+      <div class="row justify-content-center mb-5">
+        <div class="col-lg-8 text-center">
+          <h2 class="h1 mb-3">Developer Resources</h2>
+          <p class="lead text-muted">Herramientas y recursos para integrar Mapaprop en tus aplicaciones</p>
+        </div>
+      </div>
 
-    </h2>
-    <a
-      type="button"
-      class="btn btn-secondary btn-lg my-4"
-      href="api-oauth-retriever"
-      >
-      API Access Token Generator
-    </a>
-<div class="clearfix"></div>
-<img class="hero box-shadow-img mt-4" src="https://www.mapaprop.com/img/illustrations/mapaprop-console.png" style="width:100%" />		
-		<div class="clearfix"></div>
-  </div>
-	
-	
+      <div class="row">
+        <!-- Feature 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <div class="feature-icon mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-code-square" viewBox="0 0 16 16">
+                  <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
+                  <path d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0m2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0"/>
+                </svg>
+              </div>
+              <h3 class="feature-title">API REST</h3>
+              <p class="feature-description">Accede a nuestra API REST completa para gestionar propiedades, clientes y más.</p>
+            </div>
+          </div>
+        </div>
 
+        <!-- Feature 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <div class="feature-icon mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-shield-lock-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.8 11.8 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7 7 0 0 0 1.048-.625 11.8 11.8 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.54 1.54 0 0 0-1.044-1.263 63 63 0 0 0-2.887-.87C9.843.266 8.69 0 8 0m0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5"/>
+                </svg>
+              </div>
+              <h3 class="feature-title">OAuth 2.0</h3>
+              <p class="feature-description">Autenticación segura mediante OAuth 2.0 para proteger tus integraciones.</p>
+            </div>
+          </div>
+        </div>
 
-	
+        <!-- Feature 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <div class="card-body text-center">
+              <div class="feature-icon mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="currentColor" class="bi bi-file-earmark-code-fill" viewBox="0 0 16 16">
+                  <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0M9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1M6.646 7.646a.5.5 0 1 1 .708.708L5.707 10l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708zm2.708 0 2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708L10.293 10 8.646 8.354a.5.5 0 1 1 .708-.708"/>
+                </svg>
+              </div>
+              <h3 class="feature-title">Documentación</h3>
+              <p class="feature-description">Documentación completa con ejemplos de código y casos de uso.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-	<!—[if lt IE 9]>
-	<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]—>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Getting Started Section -->
+  <section class="py-60 bg-light-custom">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-header">
+              <h3 class="mb-0">Comienza Ahora</h3>
+            </div>
+            <div class="card-body">
+              <h4 class="mb-3">Pasos para integrar Mapaprop API</h4>
+              <ol class="mb-4">
+                <li class="mb-2">Obtén tus credenciales de API desde tu cuenta en <a href="https://mapaprop.app" target="_blank">mapaprop.app</a></li>
+                <li class="mb-2">Genera tu Access Token usando nuestro <a href="api-oauth-retriever">OAuth Token Generator</a></li>
+                <li class="mb-2">Consulta la documentación de la API para los endpoints disponibles</li>
+                <li class="mb-2">Comienza a integrar Mapaprop en tu aplicación</li>
+              </ol>
+              <div class="alert alert-success" role="alert">
+                <strong>¿Necesitas ayuda?</strong> Contacta con nuestro equipo de soporte en <a href="mailto:soporte@mapaprop.com" class="alert-link">soporte@mapaprop.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <h5>Mapaprop Developers</h5>
+          <p>Plataforma de desarrollo para integrar Mapaprop en tus aplicaciones y sistemas.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Enlaces Rápidos</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="https://mapaprop.com" target="_blank">Sitio Web</a></li>
+            <li class="mb-2"><a href="https://mapaprop.app" target="_blank">Aplicación</a></li>
+            <li class="mb-2"><a href="api-oauth-retriever">API Tools</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-4">
+          <h5>Contacto</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2">Email: <a href="mailto:soporte@mapaprop.com">soporte@mapaprop.com</a></li>
+            <li class="mb-2">Web: <a href="https://mapaprop.com" target="_blank">www.mapaprop.com</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="mb-0">&copy; 2015-2025 Mapaprop.com - Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
 
-	<div class="clearfix"></div>
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 </html>
