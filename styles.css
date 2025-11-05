@@ -1,0 +1,426 @@
+/**
+ * Mapaprop Developers Center - Custom Styles
+ * 2013-2025 - Mapaprop.com
+ *
+ * COLORES OFICIALES:
+ * - Verde Mapaprop: #8CC61F (success)
+ * - Secondary: #00835C
+ * - Primary/Celeste: #31b0d5
+ * - Gris textos: #4D4D4D
+ * - Negro background: #1A1A1A
+ * - Rojo alerts: #EC1C24
+ **/
+
+:root {
+  --primary: #31b0d5;
+  --secondary: #00835c;
+  --success: #8cc61f;
+  --success-hover: #aad147;
+  --success-light: #c4ed8a;
+  --info: #3399cc;
+  --danger: #ec1c24;
+  --gray: #4d4d4d;
+  --gray-light: #808080;
+  --dark: #1a1a1a;
+  --white: #ffffff;
+  --border-radius: 6px;
+}
+
+/* ========== GENERAL ========== */
+body {
+  font-family: 'Raleway', sans-serif !important;
+  font-weight: 400;
+  color: var(--gray) !important;
+  border-top: 4px solid var(--success);
+  background-color: #f8f9fa;
+  padding-top: 70px; /* Para compensar navbar fixed */
+}
+
+h1 {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ========== NAVBAR ========== */
+.navbar {
+  background-color: var(--white) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar .btn {
+  border-radius: var(--border-radius);
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-lg {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 12px 30px;
+}
+
+.btn-sm {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: var(--white);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(49, 176, 213, 0.3);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--white);
+  border-color: var(--secondary);
+  color: var(--secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 131, 92, 0.3);
+}
+
+.btn-success {
+  background-color: var(--success);
+  border-color: var(--success);
+  color: var(--white);
+}
+
+.btn-success:hover {
+  background-color: var(--success-hover);
+  border-color: var(--success-hover);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(140, 198, 31, 0.3);
+}
+
+.btn-outline-success {
+  background-color: var(--white);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.btn-outline-success:hover {
+  background-color: var(--success);
+  border-color: var(--success);
+  color: var(--white);
+}
+
+.btn-outline-secondary {
+  background-color: var(--white);
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--secondary);
+  border-color: var(--secondary);
+  color: var(--white);
+}
+
+/* ========== HERO SECTION ========== */
+.hero-section {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero-section .display-1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.hero-section .display-5 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+
+.hero-section .logo-main {
+  margin-bottom: 30px;
+  animation: fadeInDown 0.8s ease-in-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.box-shadow-img {
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box-shadow-img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ========== CARDS ========== */
+.card {
+  border-radius: var(--border-radius);
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-bottom: 30px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background-color: var(--secondary);
+  color: var(--white);
+  font-weight: 600;
+  border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+/* ========== FEATURES SECTION ========== */
+.features-section {
+  padding: 60px 0;
+  background-color: var(--white);
+}
+
+.feature-card {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: var(--border-radius);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  background-color: #f8f9fa;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--success);
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 15px;
+}
+
+.feature-description {
+  font-size: 14px;
+  color: var(--gray);
+}
+
+/* ========== FOOTER ========== */
+.footer {
+  background-color: var(--secondary);
+  color: var(--white);
+  padding: 40px 0 20px;
+  margin-top: 60px;
+}
+
+.footer h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--white);
+}
+
+.footer p,
+.footer a {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: var(--white);
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ========== UTILITIES ========== */
+.box-shadow {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.text-secondary {
+  color: var(--secondary) !important;
+}
+
+.text-success {
+  color: var(--success) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.bg-success {
+  background-color: var(--success) !important;
+}
+
+.bg-light-custom {
+  background-color: #f8f9fa;
+}
+
+/* ========== FORM STYLES ========== */
+.form-control:focus {
+  border-color: var(--success);
+  box-shadow: 0 0 0 0.2rem rgba(140, 198, 31, 0.25);
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--dark);
+  margin-bottom: 8px;
+}
+
+/* ========== ALERTS ========== */
+.alert-success {
+  background-color: var(--success-light);
+  border-color: var(--success);
+  color: var(--dark);
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  border-color: var(--danger);
+  color: var(--dark);
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  body {
+    padding-top: 60px;
+  }
+
+  .hero-section .display-1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section .display-5 {
+    font-size: 1.3rem;
+  }
+
+  .navbar-brand img {
+    height: 35px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section .display-1 {
+    font-size: 2rem;
+  }
+
+  .hero-section .display-5 {
+    font-size: 1.1rem;
+  }
+
+  .btn-lg {
+    font-size: 18px;
+    padding: 10px 25px;
+  }
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* ========== CUSTOM SPACING ========== */
+.mt-60 {
+  margin-top: 60px !important;
+}
+
+.mb-60 {
+  margin-bottom: 60px !important;
+}
+
+.py-60 {
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
